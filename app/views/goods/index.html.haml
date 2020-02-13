@@ -16,7 +16,37 @@
           .item-tax
             (税込み) 送料込み
   .main__buy
-    支払い情報
+    .main__buy__content
+      .main__buy__content__value
+        .left
+          支払い金額
+        .rigth
+          ¥2,500円
+      .main__buy__content__point
+        ポイントを使用
+      .main__buy__content__method
+        .method
+          支払い方法
+        %a.log-in{:href => "#"}
+          = "登録してください"
+      .main__buy__content__address
+        .address
+          配送先
+        %a.log-in{:href => "#"}
+          = "登録してください"
+      .main__buy__content__btn
+        .note
+          %Pこの商品はゆうゆうメルカリ便をしようしているため、   
+          %Pアプリのみ購入できます。
+        .buy-btn
+          購入ボタン
+        .instore-nav
+          %Pアプリをお持ちでに方は以下よりインストールして   
+          %pご利用頂けます。
+        .app
+          ここにはアプリボタンを配置する
+
+
 
 
 .footer
