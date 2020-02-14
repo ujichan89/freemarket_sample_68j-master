@@ -27,24 +27,31 @@
       .main__buy__content__method
         .method
           支払い方法
-        %a.log-in{:href => "#"}
-          = "登録してください"
+        .log-in
+          = link_to "#", class: "log-in" do
+            登録してください
       .main__buy__content__address
         .address
           配送先
-        %a.log-in{:href => "#"}
-          = "登録してください"
+        .log-in
+          = link_to "#", class: "log-in" do
+            登録してください
       .main__buy__content__btn
         .note
           %Pこの商品はゆうゆうメルカリ便をしようしているため、   
           %Pアプリのみ購入できます。
         .buy-btn
-          購入ボタン
+          = link_to "#", class: "btn" do
+            購入ボタン
         .instore-nav
           %Pアプリをお持ちでに方は以下よりインストールして   
           %pご利用頂けます。
-        .app
-          ここにはアプリボタンを配置する
+        .appli
+          %a.app{:href => "https://itunes.apple.com/jp/app/id667861049?l=ja&mt=8", :target => "_blank"}
+            %img{:alt => "", :src => "//www-mercari-jp.akamaized.net/assets/img/common/common/app-store.svg?35314277"}/
+          %a.google{:href => "https://play.google.com/store/apps/details?id=com.kouzoh.mercari&hl=ja", :target => "_blank"}
+            %img{:alt => "", :src => "//www-mercari-jp.akamaized.net/assets/img/common/common/google-play.svg?35314277"}/
+          
 
 
 
