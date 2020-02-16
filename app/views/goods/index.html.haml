@@ -132,8 +132,8 @@
           = form_for "#" do |f|
             = f.text_field :zone, placeholder: "例) 09012345678"
       .main__content__base__btn
-        = link_to "#", class: "touroku" do
-          登録する
+        = form_for "#" do |f|
+          =f.submit '登録する', class: 'btn'
 
 
 .footer

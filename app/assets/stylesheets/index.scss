@@ -355,7 +355,7 @@
           }
         }
         .zone{
-          width: 90%;
+          width: 100%;
           height: 20px;
           background-color: #fff;
           input[type = "text"] {
@@ -369,12 +369,15 @@
       &__btn{
         width: 90%;
         height: 50px;
-        background-color: red;
+        background-color:yellow;
         margin: auto;
         margin-top: 10px;
         text-align: center;
-        .touroku{
+        .btn{
+          width: 100%;
+          height: 60px;
           color: #fff;
+          background-color: red;
           text-decoration: none;
           font-size: 14px;
           text-align: center;
